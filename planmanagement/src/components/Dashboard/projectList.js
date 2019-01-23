@@ -6,16 +6,16 @@ const ProjectList =() => {
     return(
 
         <div className = "project-list section">
-            <Link to = "/projectsummary">
+            <Link to = "/project/:id">
             <ProjectSummary/>
             </Link>
-            <Link to = "/projectsummary">
+            <Link to = "/">
             <ProjectSummary/>
             </Link>
-            <Link to = "/projectsummary">
+            <Link to = "/">
             <ProjectSummary/>
             </Link>
-            <Link to = "/projectsummary">
+            <Link to = "/">
             <ProjectSummary/>
             </Link>
         </div>

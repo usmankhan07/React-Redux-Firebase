@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-const SignOut =()=> {
+const SignOutLink =()=> {
 return(
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><NavLink to = "/">SignUp</NavLink></li>
@@ -10,4 +10,4 @@ return(
 );
 }
 
-export default SignOut;
+export default SignOutLink;

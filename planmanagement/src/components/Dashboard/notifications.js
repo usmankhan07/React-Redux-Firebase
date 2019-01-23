@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Notifications = () => {
     return(
@@ -10,10 +11,10 @@ const Notifications = () => {
                             <span class="card-title">Notifications</span>
                             <p>Therw will be notifications</p>
                         </div>
-                        {/* <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div> */}
+                        <div class="card-action">
+                            <Link to="/">About</Link>
+                            <Link to="/">Name</Link>
+                        </div>
                     </div>
                 </div>
             </div>

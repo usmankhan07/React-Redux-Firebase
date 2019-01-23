@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-const SignIn =()=> {
+const SignInLink =()=> {
 return(
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><NavLink to="/">New Plan</NavLink></li>
@@ -11,4 +11,4 @@ return(
 );
 }
 
-export default SignIn;
+export default SignInLink;

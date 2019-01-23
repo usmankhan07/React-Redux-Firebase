@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Navbar from './components/Layouts/navbar.js';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Dashboard from './components/Dashboard/dashboard';
-import ProjectSummary from './components/Project/projectsummary';
+import ProjectDetails from './components/Project/projectdetails';
+import SignIn from './components/Auth/signin';
 
 
 class App extends Component {
@@ -13,8 +14,15 @@ render() {
       <div>
         <Navbar/>
         <Switch>
-          <Route path = '/' component = {Dashboard}/>
-          <Route path = '/projectsummary' component = {ProjectSummary}/>
+          <Route exact path = '/' render = {(props) => {
+            return (
+              <div>
+                <Dashboard/>
+              </div>
+            )
+          }}/>
+          <Route path = '/project/:id' component = {ProjectDetails}/>
+          <Route path = '/signin' component = {SignIn}/>
         </Switch>
       </div>
     </BrowserRouter>
