@@ -3,9 +3,7 @@ import React, { Component } from 'react'
 class SignIn extends Component {
     state = {
         email:null,
-        password:null,
-        firstName:null,
-        lastName:null
+        password:null
     }
 
     handleSubmit = (e)=> {

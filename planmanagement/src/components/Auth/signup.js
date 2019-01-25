@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 
 class SignUp extends Component {
     state = {
-        email:null,
-        password:null,
         firstName:null,
-        lastName:null
+        lastName:null,
+        email:null,
+        password:null
     }
 
     handleSubmit = (e)=> {
@@ -26,11 +26,11 @@ class SignUp extends Component {
             </h5>
             <div className="input-field">
                 <label htmlFor = "firstname">First Name</label>
-                <input type = "text" id = "firstname"  onChange = {this.handleChange}></input>
+                <input type = "text" id = "firstName"  onChange = {this.handleChange}></input>
             </div>
             <div className="input-field">
                 <label htmlFor = "text">Last Name</label>
-                <input type = "text" id = "lastname"  onChange = {this.handleChange}></input>
+                <input type = "text" id = "lastName"  onChange = {this.handleChange}></input>
             </div>
             <div className="input-field">
                 <label htmlFor = "email">Email</label>
